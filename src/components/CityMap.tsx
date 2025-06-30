@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import maplibregl, { Map, Marker, Popup } from 'maplibre-gl';
+import maplibregl, { Map, Marker } from 'maplibre-gl';
 
 // POI Categories
 type POICategory = 'all' | 'landmarks' | 'food' | 'art' | 'history' | 'culture';
@@ -193,6 +193,7 @@ export default function CityMap() {
     if (mapRef.current && !isLoading) {
       addMarkers();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategory, isLoading]);
 
   useEffect(() => {
@@ -256,6 +257,7 @@ export default function CityMap() {
         mapRef.current = null;
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (mapError) {
