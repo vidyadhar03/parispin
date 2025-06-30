@@ -337,7 +337,7 @@ export default function CityMap() {
       )}
 
       {/* Filter Chips Bar */}
-      <div className="absolute bottom-6 left-4 right-4 z-20">
+      <div className="absolute bottom-24 left-4 right-4 z-20 mb-8">
         <div className="bg-blue-50/95 backdrop-blur-sm rounded-xl shadow-lg border border-blue-200 p-3">
           <div className="flex items-center gap-3 overflow-x-auto scrollbar-hide">
             <span className="text-sm font-medium text-gray-700 whitespace-nowrap mr-2">
