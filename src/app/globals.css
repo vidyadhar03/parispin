@@ -24,3 +24,48 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* MapLibre GL styles */
+.maplibregl-map {
+  background-color: #f0f0f0 !important;
+}
+
+.maplibregl-canvas-container {
+  background-color: transparent !important;
+}
+
+/* Hide scrollbar for filter chips */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom marker animations */
+.custom-marker {
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-marker:hover {
+  z-index: 1000;
+}
+
+/* Popup styling improvements */
+.maplibregl-popup-content {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Top bar styling */
+.top-bar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Ensure map attribution doesn't overlap with filter chips */
+.maplibregl-ctrl-bottom-right {
+  bottom: 100px !important;
+}
